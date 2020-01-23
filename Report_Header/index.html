@@ -1,0 +1,28 @@
+<!--FORMSTYLE-->
+.logo img { width:100% !important; height:auto !important; } @import url(//db.onlinewebfonts.com/c/bea3c37a69c86e7b9557985699b866a8?family=Algerian);
+.title-font{ font-family:'Algerian' !important; } .main-title{ color: #0070C0;
+} .state-name-div.Agency.Logo { display : none !important;} .department-div.Agency.Logo
+{ display : none !important;} .logo-div.Agency.State { display : none !important;}
+.department-div.Agency.State { display : none !important;} .state-name-div.Licensing.Department.Name
+{ display : none !important;} .logo-div.Licensing.Department.Name { display
+: none !important;}
+<!--FORMSTYLE-->
+<div class="container-fluid">
+    <div class="row">
+        <!--[repeater]-->
+        <div class="col col-4 col-xs-4 logo logo-div [VALUE]">
+            <img alt="" src="[VALUE DESC]">
+        </div>
+        <div class="col col-8 col-xs-8 state-name-div text-center [VALUE]">
+            <h1 class="state-name title-font [VALUE]" style="font-family: Algerian;">
+                [VALUE DESC]
+            </h1>
+        </div>
+        <div class="col col-8 col-xs-8 col-sm-offset-4 offset-4 department-div text-center [VALUE]">
+            <h2 class="department [VALUE]" style="font-family: &quot;Arial Narrow&quot;;">
+                [VALUE DESC]
+            </h2>
+        </div>
+        <!--[/repeater]-->
+    </div>
+</div>
